@@ -1,0 +1,38 @@
+{
+  "users": [
+    {
+      "name": "thanh",
+      "id": "xcqxHe4"
+    },
+    {
+      "name": "phuc",
+      "id": "G8jZsmg"
+    },
+    {
+      "name": "huynh",
+      "id": "c57cKUi"
+    },
+    {
+      "name": "asdas",
+      "phone": "adsdas",
+      "id": "jtaOFJm",
+      "email": "nguoigiaumat100@gmail.com",
+      "password": "7692dcdc19e41e66c6ae2de54a696b25"
+    },
+    {
+      "name": "qweq",
+      "phone": "13231",
+      "id": "f49IpJY"
+    },
+    {
+      "name": "Ph",
+      "phone": "0134843121",
+      "id": "e2DLqqt"
+    },
+    {
+      "name": "Tớ thích cậu",
+      "phone": "09383902",
+      "id": "tp7erBM"
+    }
+  ]
+}

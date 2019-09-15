@@ -1,0 +1,18 @@
+extends ../layout/connom.pug
+
+block  content
+    h1 Create user
+    if errs
+        each err in errs
+            .alert.alert-danger=err 
+
+    form(action="/users/create", method="POST")
+        .form-group
+            lable(for="name") Name
+            input#name.form-control(type="text", name="name",value= values ? values.name:"")
+        .form-group
+            lable(for="phone") Phone
+            input#phone.form-control(type="text", name="phone",value=values ? values.phone:"")
+
+        button.btn.btn-primary Create
+    p values.phone
