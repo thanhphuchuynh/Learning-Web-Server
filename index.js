@@ -8,6 +8,7 @@ var userRoutes = require('./routes/users.routes');
 var cookieParser = require('cookie-parser');
 var authRoutes = require('./routes/auth.routes');
 var authMiddiewares = require('./middiewares/auth.middiewares');
+var product = require('./routes/product.routers');
 
 const app = express();
 
@@ -28,8 +29,9 @@ app.get('/', function(req, res) {
 });
 app.use('/users', authMiddiewares.requireAuth, userRoutes);
 app.use('/auth', authRoutes);
-
+app.use('/product', product);
 
 app.listen(port, function() {
     console.log('Server Listening on port ' + port);
+
 });

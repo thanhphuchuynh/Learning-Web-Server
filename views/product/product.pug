@@ -1,0 +1,26 @@
+extends ../layout/connom.pug
+block  content
+    h1 Product
+    .row
+        each product in products
+            .col-sm-3  
+                .card(style='width: 18rem;')
+                img.card-img-top(src=product.image, alt=product.name)
+                .card-body
+                    h5.card-title=product.name
+                    p.card-text
+                    | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+                    a.btn.btn-primary.ml-auto.d-flex(href='#' ) Go somewhere
+    nav(aria-label='Page navigation example')
+        ul.pagination.d-flex.ml-auto.justify-content-end
+            li.page-item
+             a.page-link(href='/product?page='+(pageNow-1)) Previous
+             each page in numbers
+                li.page-item
+                a.page-link(href='/product?page='+page)=page
+            //- li.page-item
+            //-  a.page-link(href='#') 2
+            //- li.page-item
+            //-   a.page-link(href='#') 3
+            li.page-item
+              a.page-link(href='/product?page='+(pageNow+1)) Next
