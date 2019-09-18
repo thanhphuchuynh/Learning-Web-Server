@@ -32,7 +32,7 @@ module.exports.postCreate = function(req, res) {
 
 
     req.body.id = shortid.generate();
-
+    req.body.avatar = req.file.path.split('\\').slice(1).join('\\');
     // var err = [];
     // console.log(req.body);
     // if (!req.body.name) {

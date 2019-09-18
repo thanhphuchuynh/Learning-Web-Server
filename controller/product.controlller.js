@@ -17,7 +17,7 @@ module.exports.index = function(req, res, next) {
         arrayPage.push(page + i)
         i++;
     }
-    console.log(arrayPage);
+    //console.log(arrayPage);
     res.render('product/product', {
         // products: db.get('product').value()
         // products: db.get('product').value().slice(start, end)
